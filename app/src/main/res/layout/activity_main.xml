@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:id="@+id/btnback"
+        android:text="back"/>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/imgPhoto"
+        android:layout_gravity="center"
+        android:scaleType="centerInside"
+        android:background="@drawable/avatar"/>
+
+
+    <EditText
+        android:id="@+id/etname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Item Name"
+        android:textSize="20sp"
+        android:layout_margin="20dp"
+        android:drawablePadding="10dp">
+
+        <requestFocus />
+    </EditText>
+    <EditText
+        android:id="@+id/etprice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Item Price"
+        android:textSize="20sp"
+        android:inputType="numberDecimal"
+        android:layout_margin="20dp"
+        android:drawablePadding="10dp"
+
+      />
+
+    <EditText
+        android:id="@+id/etdesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Item Description"
+        android:textSize="20sp"
+        android:gravity="start"
+        android:layout_weight="1"
+        android:layout_margin="20dp"
+        android:drawablePadding="10dp"
+
+       />
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:id="@+id/btnsave"
+        android:text="Submit"/>
+</LinearLayout>
+</ScrollView>
